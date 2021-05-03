@@ -1,38 +1,216 @@
-.App {
-  text-align: center;
+html{
+    font-family: sans-serif;
+    background-color: #BEDBE8;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+    margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav{
+    text-align:center;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.icon{
+    font-size: 35px;
+    margin-right: 10px;
+    color:  #BEDBE8;
 }
 
-.App-link {
-  color: #61dafb;
+.link{
+    color: #264653;
+    margin-top: 13px;
+    margin-right: 5px;
+    font-family: 'Marmelad', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav:hover .link{
+    color: #BEDBE8;
+}
+
+.banner{
+    display: flex;
+    justify-content: space-between;
+    background: #264653;
+    height: 30%;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+}
+
+.search a{
+    color: #219ebc;
+    font-family: 'Days One', sans-serif;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    margin: 15px;
+    text-decoration: none;
+}
+
+.search a:hover{
+    color: #f4a261;
+}
+
+input{
+    font-size: 15px;
+    border-radius: 15px;
+    border-style: none;
+    outline: none;
+}
+
+
+#main{
+    font-style: bold;
+    font-weight: bold;
+}
+
+.homepage{
+    margin-top: 50px;
+    font-family: 'Marmelad', sans-serif;
+    text-align: center;
+}
+
+.homepage h2{
+    margin-bottom: 80px;
+}
+
+.homepage h3{
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #219ebc;
+}
+
+.homepage b{
+    color: #023047;
+}
+
+footer{
+    font-size: 0.35em;
+    color: #8ecae6;
+    text-align: center;
+}
+
+.footHolder{
+    bottom: 0;
+    position: fixed;
+    left: 50%;
+    margin-left: -300px;
+    width: 600px;
+}
+
+.control{
+    position: absolute;
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    font-size: 400%;
+    margin-top: 100px;
+    margin-left: -300px;
+    left: 50%;
+}
+
+.resultCard{
+    margin-top: 100px;
+    display:flex;
+    flex-flow: column nowrap;
+}
+
+#albumFoot{
+    display: flex;
+    text-align: center;
+    flex-flow: column wrap;
+    line-height: 1%;
+    flex-shrink: 0;
+    margin-top: 15px;
+    font-size: 120%;
+}
+
+#fav{
+    color: #219ebc;
+}
+
+#fav:hover{
+    color: #f4a261;
+    text-shadow: 0px 4px 20px #264653;
+}
+
+#next{
+    color: #219ebc;
+}
+
+#next:hover{
+    color: #f4a261;
+    text-shadow: 0px 4px 20px #264653;
+}
+
+#title{
+    font-size: 95%;
+}
+
+#artist{
+    font-size: 85%;
+}
+
+#cover{
+    width: 300px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px #264653;
+}
+
+.favorites{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.favorite{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 280px;
+    color:white;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.favorite img{
+    width: 200px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 20px #264653;
+    margin-bottom: -10px;
+    align-self: center;
+}
+
+.favorite h2{
+    font-size: 20px;
+    line-height: 18px;
+}
+
+.favorite h4{
+    font-size: 15px;
+    margin-top: -5px;
+}
+
+.favoriteFooter{
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+}
+
+@media (max-width: 400px){
+    .favorites{
+        flex-direction: column;
+    }
 }
